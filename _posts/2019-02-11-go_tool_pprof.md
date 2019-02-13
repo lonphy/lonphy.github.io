@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "golang 分析工具使用"
+title:  "Golang 分析工具使用"
 date:   2019-02-11 01:00:04 +0800
 category: golang
 ---
