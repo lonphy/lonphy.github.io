@@ -10,17 +10,18 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "笔记列表" }}</h2>
+    <h2 class="post-list-heading">{{ page.list_title }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
-
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
 		  <span class="post-meta">{{ post.date | date: site.date_format }}</span>
 		</h3>
-		
-        {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
+
+		{%- if site.show_excerpts -%} 
+			<p class="post-excerpts">{{ post.excerpt | strip_html }}</p>
+		{%- endif -%}
       </li>
       {%- endfor -%}
     </ul>

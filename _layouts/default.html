@@ -6,7 +6,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		{%- seo -%}
-		<link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+		<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+		<link rel="stylesheet" href="{{ "/assets/css/style-override.css" | relative_url }}">
 		{%- feed_meta -%}
 	</head>			  
 
@@ -18,8 +19,16 @@
       <div class="wrapper">
         {{ content }}
       </div>
-    </main>
-
+	</main>
+	
+	<aside class="site-aside">
+		<h4>分类</h4>
+		<ul>
+			{%- for category in site.categories -%}
+			<li>{{category[0]}}</li>
+			{%- endfor -%}
+		</ul>
+	</aside>
     {%- include footer.html -%}
 
   </body>

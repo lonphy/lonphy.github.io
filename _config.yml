@@ -30,6 +30,17 @@ theme: minima
 plugins:
   - jekyll-feed
 
+show_drafts: true
+show_excerpts: true
+
+# SASS settings
+sass:
+    sass_dir: assets/css
+    style: compact
+
+# Output settings
+verbose : false
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
