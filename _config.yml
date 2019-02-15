@@ -18,8 +18,8 @@ email: dev@lonphy.com
 description: >- # this means to ignore newlines until "baseurl:"
   Teachblog with golang, c/c++, stm32, esp32 etc
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://blog.lonphy.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  lonphy
 lang: zh-cn
 date_format: "%Y-%m-%d %H:%M:%S"
