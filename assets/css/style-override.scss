@@ -3,8 +3,14 @@
 
 body {
 	overflow-x: hidden;
+	font-size: 13px;
 }
 
+pre,code {
+	font-size: inherit;
+	background: #eaeaea;
+	border: none;
+}
 blockquote {
 	p, a {
 		font-size: 12px;
@@ -77,7 +83,8 @@ blockquote {
 	.post-meta {float: right;}
 }
 
-.post .post-meta {
+.post {
+	 .post-meta {
     font-size: 13px;
     color: #828282;
     display: flex;
@@ -87,10 +94,46 @@ blockquote {
     line-height: 2em;
     border-bottom: solid 1px #eee;
     padding: 0px 10px;
+	}
+
+	.post-content {
+		h4 {
+			font-size: 16px;
+			font-weight: 600;
+			border-bottom: dashed 1px #ccc;
+			margin-top: 2em;
+		}
+
+		li {
+			line-height: 2em;
+		}
+	}
 }
 
 .post-tags {
     display: flex;
 	dt,dd {margin-right: 5px;}
 	margin: 0;
+}
+
+.post-title {
+    font-size: 24px;
+    letter-spacing: -1px;
+    line-height: 1;
+    font-weight: bolder;
+}
+
+code.highlighter-rouge {
+    background-color: #fff0f0;
+    border-radius: 1em;
+    padding: 2px 5px;
+    vertical-align: baseline;
+    border: none;
+    color: #ff3131;
+}
+
+.highlighter-rouge .highlight {
+	background-color: #eaeaea;
+	border-radius: 5px;
+	border:none;
 }
