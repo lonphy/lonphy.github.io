@@ -26,7 +26,7 @@ date_format: "%Y-%m-%d %H:%M:%S"
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-slate
+theme: minima
 plugins:
   - jekyll-feed
 
