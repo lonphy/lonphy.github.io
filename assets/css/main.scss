@@ -2,3 +2,174 @@
 ---
 
 @import "minima";
+
+pre,code {
+	background: #eaeaea;
+}
+a {
+    color: #444;
+    &:visited { color: #666; }
+    &:hover { color: #444; }
+}
+
+code.highlighter-rouge {
+    background-color: #fff0f0;
+    color: #ff3131;
+}
+
+.highlighter-rouge .highlight {
+	background-color: #eaeaea;
+}
+
+.site-header, .site-footer {
+    background-color: #fff;
+}
+.site-header { box-shadow: 0 3px 8px #bbb }
+.site-footer { box-shadow: 0 -3px 8px #bbb }
+
+.home {
+	box-shadow: 0 0 8px #bbb;
+	h2 {
+		box-shadow: 0 1px 3px #bbb;
+	}
+}
+
+.site-aside {
+	background-color: #fff;
+	box-shadow: 0 0 8px #bbb;
+	h4 {
+		box-shadow: 0 1px 3px #bbb;
+		background-color: #eee;
+	}
+}
+
+.post-list {
+	.post-excerpts {
+		color:#777;
+	}
+
+	& >li {
+		border-bottom-color: #eee;
+		border-top-color: #ccc;
+	}
+}
+
+.post {
+	.post-meta {
+		color: #828282;
+		border-bottom-color: #eee;
+	}
+}
+
+.post .post-content h4 {
+    border-bottom-color: #ccc;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+        color: #aaa;
+        background-color: #333;
+        background-image: url(/assets/images/bg.jpeg);
+	}
+    pre,code { background: #38383880; }
+    pre > code {background-color: transparent}
+
+	a {
+		color: #fafafa;
+		&:visited { color: #aaa; }
+		&:hover { color: #fff; }
+	}
+    .wrapper{ background-color:#33333380; }
+	.site-nav .page-link { color: #bccdce;}
+
+	.site-header, .site-footer {
+        background-color: #2f2f2f80;
+        .wrapper {background-color: transparent}
+	}
+
+	.site-header {
+        border-top-color: #2f2f2f;
+        border-bottom-color: #171717;
+        box-shadow: 0 1px 0 #232323;
+	}
+	.site-footer { 
+        border-top-color: #171717;
+        box-shadow: 0 -1px 0 #232323;
+	}
+
+	.site-title, .site-title:visited {
+		color: #bccdce;
+	}
+
+	.home {
+		box-shadow: none;
+		h2 {
+            border-bottom-color: #171717;
+            box-shadow: 0 1px 0 #232323;
+		}
+	}
+	.site-aside {
+        background-color: #33333380;
+        box-shadow: none;
+		h4 {
+            box-shadow: 0 1px 0 #232323;
+            border-bottom: 1px solid #171717;
+            background-color: transparent;
+		}
+	}
+
+	.post-list {
+		.post-excerpts {
+			color:#999;
+		}
+	
+		& >li {
+            border-bottom-color: #171717;
+            border-top-color: #232323;
+		}
+    }
+    .post-title {
+        text-shadow: 0 0 1px #000;
+    }
+
+	code.highlighter-rouge {
+		background-color: #38383880;
+		color: #ff3131;
+	}
+	
+	.highlighter-rouge .highlight {
+		background-color: #38383880;
+	}
+
+	table {
+		color: inherit;
+		border-color: #333;
+
+		th {
+			background-color: #383838;
+			border-color: #383838;
+			border-bottom-color: #252525;
+		}
+
+		td {
+			border-color: #383838;
+		}
+
+		tr:nth-child(even) {
+			background-color: #35353580;
+		}
+    }
+    
+
+    .post {
+        .post-content h4 { 
+            border-bottom-color: #171717;
+            box-shadow: 0 1px 0 #232323;
+        }
+        .post-meta {
+            color: #889394;
+            border-bottom-color: #171717;
+            box-shadow: 0 1px 0 #232323;
+        }
+    }
+}
